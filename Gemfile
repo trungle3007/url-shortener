@@ -5,7 +5,9 @@ source 'https://rubygems.org'
 
 gem 'pg', '~> 0.18.4'
 gem 'puma', '~> 6.2', '>= 6.2.2'
+gem 'sequel'
 gem 'sinatra', '~> 3.0.6'
+gem 'sinatra-contrib'
 
 
 group :test, :development do
