@@ -12,8 +12,8 @@
 # the additional setup, and require it from the spec files that actually need
 # it.
 
-Dir['./service/*.rb'].each { |f| require f }
-Dir['./entity/*.rb'].each { |f| require f }
+Dir['./command/*.rb'].each { |f| require f }
+Dir['./model/*.rb'].each { |f| require f }
 
 # See https://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 RSpec.configure do |config|
