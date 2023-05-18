@@ -1,0 +1,4 @@
+.git
+spec
+.rspec
+docker-compose.yml
