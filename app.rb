@@ -6,7 +6,7 @@ require './init'
 class App < Sinatra::Application
   get '/:key' do
     original_url = FindOriginalUrlCommand.perform(params[:key])
-    redirect(original_url.url)
+    redirect(original_url.url, 301)
   rescue Exception::OriginalURLNotFoundError
     halt(404, 'The URL that you are visiting does not exist.')
   end
