@@ -38,7 +38,7 @@ class BaseNEncode
     length = ALPHABET.length
 
     str.each_char do |char|
-      num = num * length + ALPHABET.index(char)
+      num = num * length + ALPHABET.index(char) if ALPHABET.index(char)
     end
 
     num

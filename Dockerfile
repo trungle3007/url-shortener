@@ -19,5 +19,3 @@ COPY . .
 EXPOSE 9292
 
 ENTRYPOINT [ "/app/docker-entrypoint.sh" ]
-
-# CMD [ "bundle", "exec", "puma", "config.ru" ]
