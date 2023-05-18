@@ -1,5 +1,7 @@
 class FindOriginalUrlCommand
   def self.perform(key)
+    raise(Exception::OriginalURLNotFoundError) unless key
+
     serv = BaseNEncode.new
     id = serv.decode(key)
     origin_url = OriginalUrl.where(id: id).first
